@@ -1,0 +1,7 @@
+rootProject.name = "ModuleConsumerAndroid"
+include ':app'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'api_module_demo/.android/include_flutter.groovy'
+))
