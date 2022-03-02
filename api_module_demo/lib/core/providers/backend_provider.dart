@@ -9,7 +9,7 @@ class BackendProvider {
   late ApiDummy _apiDummy;
 
   BackendProvider() {
-    _apiDummy = _apiAccessor.getApiSample("https://api.jsonbin.io/b");
+    _apiDummy = _apiAccessor.getApiDummy("https://api.jsonbin.io/b");
   }
 
   Future<Dummy> fetchDatas() {

@@ -13,5 +13,6 @@ class Dummy {
 
   factory Dummy.fromJson(Map<String, dynamic> json) => _$DummyFromJson(json);
   Map<String, dynamic> toJson() => _$DummyToJson(this);
+
   String toRawJson() => jsonEncode(toJson());
 }

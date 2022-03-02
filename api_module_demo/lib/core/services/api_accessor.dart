@@ -20,7 +20,7 @@ class ApiAccessor {
     return dio;
   }
 
-  ApiDummy getApiSample(String baseUrl) {
+  ApiDummy getApiDummy(String baseUrl) {
     return ApiDummy(configureDio(), baseUrl: baseUrl);
   }
 }

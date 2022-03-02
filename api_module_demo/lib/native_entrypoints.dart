@@ -4,7 +4,7 @@ import 'package:api_module_demo/main.dart';
 import 'package:flutter/services.dart';
 
 class NativeEntrypoints {
-  final platform = const MethodChannel(channelDummy);
+  final _platform = const MethodChannel(channelDummy);
   final BackendProvider _backendProvider = getIt.get();
 
   NativeEntrypoints() {
@@ -12,7 +12,7 @@ class NativeEntrypoints {
   }
 
   void setNativeListeners() {
-    platform.setMethodCallHandler((methodCall) async {
+    _platform.setMethodCallHandler((methodCall) async {
       switch (methodCall.method) {
         case methodGetDummy:
           return await _backendProvider

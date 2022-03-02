@@ -1,9 +1,7 @@
 package fr.norsys.moduleconsumerandroid.data
 
-import android.widget.TextView
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import fr.norsys.moduleconsumerandroid.R
 import fr.norsys.moduleconsumerandroid.domain.models.DummyModel
 import fr.norsys.moduleconsumerandroid.domain.utils.AppConstants
 import io.flutter.embedding.engine.FlutterEngine
@@ -52,6 +50,4 @@ class FlutterBridgeImpl @Inject constructor(flutterEngine: FlutterEngine) : Flut
 
             })
         }
-
-
 }
